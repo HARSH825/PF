@@ -39,7 +39,7 @@ const Contact = () => {
                     <div className="text-center mb-12">
                         <button
                             onClick={copyEmail}
-                            className="inline-flex items-center gap-3 text-2xl md:text-3xl font-bold text-accent hover:text-accent-hover transition-colors mb-4"
+                            className="inline-flex items-center gap-3 text-2xl md:text-3xl font-bold text-accent hover:text-accent-hover transition-colors mb-4 cursor-pointer"
                         >
                             <FiMail />
                             harshchhallani3@gmail.com

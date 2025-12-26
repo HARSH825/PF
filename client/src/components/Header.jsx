@@ -38,7 +38,7 @@ const Header = () => {
                 {/* Logo */}
                 <button
                     onClick={() => scrollToSection('hero')}
-                    className="text-2xl font-bold text-text-primary hover:text-accent transition-colors"
+                    className="text-2xl font-bold text-text-primary hover:text-accent transition-colors cursor-pointer"
                 >
                     HC
                 </button>
@@ -49,7 +49,7 @@ const Header = () => {
                         <button
                             key={link.id}
                             onClick={() => scrollToSection(link.id)}
-                            className="text-text-primary hover:text-accent transition-colors font-medium"
+                            className="text-text-primary hover:text-accent transition-colors font-medium cursor-pointer"
                         >
                             {link.name}
                         </button>
@@ -58,7 +58,7 @@ const Header = () => {
                         variant="primary"
                         href="https://drive.google.com/file/d/1WzmvSdsjDiLaZYAd6ParBsrO3zS1gLqF/view?usp=sharing"
                         icon={<FiDownload />}
-                        className="text-sm"
+                        className="text-sm cursor-pointer"
                     >
                         Resume
                     </Button>
@@ -67,7 +67,7 @@ const Header = () => {
                 {/* Mobile Menu Button */}
                 <button
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    className="md:hidden text-text-primary text-2xl"
+                    className="md:hidden text-text-primary text-2xl cursor-pointer"
                 >
                     {isMobileMenuOpen ? <FiX /> : <FiMenu />}
                 </button>
@@ -81,7 +81,7 @@ const Header = () => {
                             <button
                                 key={link.id}
                                 onClick={() => scrollToSection(link.id)}
-                                className="text-text-primary hover:text-accent transition-colors font-medium text-left"
+                                className="text-text-primary hover:text-accent transition-colors font-medium text-left cursor-pointer"
                             >
                                 {link.name}
                             </button>
@@ -90,7 +90,7 @@ const Header = () => {
                             variant="primary"
                             href="https://drive.google.com/file/d/1WzmvSdsjDiLaZYAd6ParBsrO3zS1gLqF/view?usp=sharing"
                             icon={<FiDownload />}
-                            className="text-sm w-full"
+                            className="text-sm w-full cursor-pointer"
                         >
                             Resume
                         </Button>

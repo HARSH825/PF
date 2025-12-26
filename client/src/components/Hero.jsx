@@ -25,7 +25,7 @@ const Hero = () => {
         <section id="hero" className="min-h-screen flex items-center pt-16 bg-primary">
             <div className="max-w-7xl mx-auto px-6 w-full">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
-                    {/* Left: Cat Image */}
+                    {/* Left:  Image */}
                     <div className="order-2 md:order-1">
                         <div className="relative inline-block">
                             <div className="absolute left-0 top-0 bottom-0 border-l-2 border-text-primary"></div>
@@ -62,14 +62,14 @@ const Hero = () => {
                         </div>
 
                         {/* CTA Buttons - OUTLINED */}
-                        <div className="flex flex-col sm:flex-row gap-4">
-                            <Button
+                        <div className="flex flex-col sm:flex-row gap-4 ">
+                            <Button className='cursor-pointer'
                                 variant="primary"
                                 onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
                             >
                                 View Projects
                             </Button>
-                            <Button
+                            <Button className='cursor-pointer'
                                 variant="secondary"
                                 onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
                             >
